@@ -22,3 +22,9 @@ for images in os.listdir(cars_folder):
     # img.save(f'{new_folder}{clear_jpg}.png', 'png')
     print('[+] Image Processing...')
 print('All Done. Thank you.')
+
+
+
+
+
+# go  terminal ,,,, write command  ,,, python resize.py foldarname/ foldarnamenew/
