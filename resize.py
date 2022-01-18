@@ -1,4 +1,8 @@
+
 import mylib
+
+from PIL import Image, ImageFilter    #pip install Pillow
+
 
 CURRENT_PATH = "image__augmented"
 DESTINATION_PATH = "image_SPLIT"
