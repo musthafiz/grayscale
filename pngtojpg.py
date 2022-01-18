@@ -1,7 +1,7 @@
 from PIL import Image
 import os
 
-directory = r'F:\Noise Free Mango\image-process'
+directory = r'F:\MANGO\Noise Free Mango\Noise Free Original Image\LEAF\Gall_Midge_Leaf'
 c=1
 for filename in os.listdir(directory):
     if filename.endswith(".png"):

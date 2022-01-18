@@ -1,30 +1,15 @@
-from PIL import Image, ImageFilter
+import mylib
 
-import os
-import sys
-
-#arguments
-cars_folder = sys.argv[1]
-new_folder = sys.argv[2]
-
-#check new folder exists or not
-if not os.path.exists(new_folder):
-    os.makedirs(new_folder)
-
-#loop/read the images
-for images in os.listdir(cars_folder):
-    img = Image.open(f'{cars_folder}{images}')
-    clear_jpg = os.path.splitext(images)[0]
-    resize_img = img.resize((400,400))
-    resize_img.save(f'{new_folder}{clear_jpg}.png','png')
-
-    # img.thumbnail((500,500))
-    # img.save(f'{new_folder}{clear_jpg}.png', 'png')
-    print('[+] Image Processing...')
-print('All Done. Thank you.')
+CURRENT_PATH = "image__augmented"
+DESTINATION_PATH = "image_SPLIT"
+# IMAGE_SIZE = (224, 224)
 
 
+# mylib.copy_folders(CURRENT_PATH, DESTINATION_PATH)
+# mylib.resize_images(CURRENT_PATH, DESTINATION_PATH, IMAGE_SIZE)
+# mylib.split_to("Noisefree_128x128", "Noisefree_128x128_split", 0.9, 0.1, 0)
+""" mylib.split_to(CURRENT_PATH,
+               DESTINATION_PATH, 0.8, 0.1, 0.1) """
 
 
-
-# go  terminal ,,,, write command  ,,, python resize.py foldarname/ foldarnamenew/
+# mylib.get_folders(CURRENT_PATH)
