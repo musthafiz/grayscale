@@ -1,10 +1,10 @@
 import os
 import pathlib
 
-import splitfolders  # or import split_folders
-from keras.preprocessing.image import ImageDataGenerator
-from PIL import Image
-from skimage import io
+import splitfolders  # or import split_folders #pip install split-folders
+from keras.preprocessing.image import ImageDataGenerator  #pip install tensorflow
+from PIL import Image #pip install Pillow
+from skimage import io #python -m pip install -U scikit-image
 
 
 def create_dir(d):
